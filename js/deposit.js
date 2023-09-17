@@ -18,5 +18,9 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
     balanceTotalElement.innerText = currentBalanceTotal;
 
     depositField.value = '';
+    if (isNaN(newDepositAmount)) {
+        alert('please provide a valid number');
+        return;
+    }
 
 })
